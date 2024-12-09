@@ -51,6 +51,3 @@ Each service is presented with an image and a brief description to inform and at
 - **Responsive Design**: Ensures the website works seamlessly across devices.
 
 ---
-
-## 📂 **Folder Structure**
-src/ ├── components/ ├── About  ├── About.jsx # About Us component ├── Dentist ├── Dentist.jsx # Dentist component ├── FAQ ├── FAQ.jsx #FAQ component ├── Footer ├── Footer.jsx # Footer component ├── Hero ├── Carousel.jsx # Carousel component ├── Navbar ├── Navbar.jsx # Navbar component ├── Pricing ├── Pricing.jsx # Pricing component ├── Services ├── Services.jsx # Services component ├── img/ # Image assets │ ├── service-1.jpg │ ├── service-2.jpg │ ├── service-3.jpg │ ├── service-4.jpg ├── App.js # Main application file
