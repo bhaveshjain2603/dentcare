@@ -53,20 +53,22 @@ Each service is presented with an image and a brief description to inform and at
 ---
 
 ## Project Structure 📂
-dentcare/
-├── frontend/
-|   ├── public/
-|   ├── src/
-|   ├── assets/
-|   ├── components/     # Reusable components
-|   ├── img/            # Images for project
-|   ├── pages/          # Pages
-|   ├── App.css         # App Styles
-|   ├── App.jsx         # Main App Component
-|   ├── index.css       # Index Styles
-|   ├── main.jsx        # Entry Point
-|   ├──package.json
-├── README.md           # Documentation
+   ```bash
+   dentcare/
+   ├── frontend/
+   │   ├── public/
+   │   ├── src/
+   │       ├── assets/
+   │       ├── components/     # Reusable components
+   │       ├── img/            # Images for project
+   │       ├── pages/          # Pages
+   │       ├── App.css         # App Styles
+   │       ├── App.jsx         # Main App Component
+   │       ├── index.css       # Index Styles
+   │       ├── main.jsx        # Entry Point
+   ├── package.json
+   ├── README.md               # Documentation
+
 
 ---
 
