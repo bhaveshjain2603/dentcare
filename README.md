@@ -60,8 +60,10 @@ Each service is presented with an image and a brief description to inform and at
    │   ├── src/
    │       ├── assets/
    │       ├── components/     # Reusable components
+   │       ├── data/           # Services Data
    │       ├── img/            # Images for project
    │       ├── pages/          # Pages
+   │       ├── styles/         # Admin Styles
    │       ├── App.css         # App Styles
    │       ├── App.jsx         # Main App Component
    │       ├── index.css       # Index Styles
