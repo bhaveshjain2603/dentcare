@@ -19,7 +19,7 @@ const Contact = () => {
     {
       icon: <Email />,
       title: "Email",
-      details: ["info@DentCare.com", "appointments@DentCare.com"],
+      details: ["info@DentCare.com"],
       color: "text-green-500"
     },
     {
@@ -145,9 +145,9 @@ const Contact = () => {
                   {contactInfo.map((info, index) => (
                     <Grid item xs={12} key={index}>
                       <Box className="flex items-start space-x-4">
-                        <Box className={`p-2 rounded-full bg-white shadow-md ${info.color}`}>
+                        {/* <Box className={`p-2 rounded-full bg-white shadow-md ${info.color}`}>
                           {info.icon}
-                        </Box>
+                        </Box> */}
                         <Box className="text-start">
                           <Typography variant="h6" className="font-semibold text-gray-800">
                             {info.title}
@@ -265,7 +265,7 @@ const Contact = () => {
                       <li>Stay calm and call our emergency hotline</li>
                       <li>Keep knocked-out tooth moist</li>
                       <li>Apply pressure to stop bleeding</li>
-                    </ul>
+                    </ul> 
                     <ul className="list-disc pl-6 space-y-1">
                       <li>Take pain medication if needed</li>
                       <li>Have someone drive you</li>
