@@ -9,10 +9,10 @@ const Footer = () => {
       title: "Quick Links",
       links: [
         { name: "Home", href: "/" },
-        { name: "About Us", href: "#about" },
-        { name: "Services", href: "#services" },
-        { name: "Our Dentists", href: "#dentists" },
-        { name: "Contact", href: "#contact" }
+        { name: "About Us", href: "/about" },
+        { name: "Services", href: "/services" },
+        { name: "Our Dentists", href: "/dentists" },
+        { name: "Contact", href: "/contact" }
       ]
     },
     {
@@ -100,7 +100,7 @@ const Footer = () => {
           <Grid container spacing={4} className="items-center">
             <Grid item xs={12} lg={6} className="text-center">
               <Typography variant="body2" className="text-gray-400 mb-4 lg:mb-0">
-                &copy; {new Date().getFullYear()} DentCare Clinic. All rights reserved.
+                &copy; Designed and Created by Bhavesh.
               </Typography>
             </Grid>
             <Grid item xs={12} lg={6}>
