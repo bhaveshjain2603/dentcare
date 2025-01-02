@@ -1,28 +1,24 @@
 import React from 'react';
-import { Container, Typography, Grid, Paper } from '@mui/material';
-import { LocalHospital, Timer, Group, Star } from '@mui/icons-material';
+import { Container, Typography, Grid, Card, CardContent } from '@mui/material';
+import { motion } from 'framer-motion';
 
 const About = () => {
   const features = [
     {
-      icon: <LocalHospital className="text-primary text-4xl" />,
-      title: "Expert Care",
-      description: "Our team of experienced dentists provides top-quality dental care"
+      title: "Expert Team",
+      description: "Our team of highly qualified dentists and specialists brings decades of combined experience in all aspects of dentistry. Each member is committed to ongoing education to stay at the forefront of dental innovations."
     },
     {
-      icon: <Timer className="text-primary text-4xl" />,
-      title: "Modern Facilities",
-      description: "State-of-the-art equipment and comfortable treatment rooms"
+      title: "Modern Technology",
+      description: "We utilize advanced digital imaging, 3D scanning, and the latest dental technologies to provide precise diagnostics and comfortable treatments. Our modern equipment ensures efficient and minimally invasive procedures."
     },
     {
-      icon: <Group className="text-primary text-4xl" />,
-      title: "Patient-Focused",
-      description: "Personalized care tailored to your unique dental needs"
+      title: "Comprehensive Care",
+      description: "From routine check-ups to complex procedures, we offer a full range of dental services under one roof. Our integrated approach ensures coordinated care for all your dental needs."
     },
     {
-      icon: <Star className="text-primary text-4xl" />,
-      title: "Quality Service",
-      description: "Committed to excellence in dental healthcare"
+      title: "Patient Comfort",
+      description: "We understand dental anxiety and prioritize your comfort. Our caring staff, relaxing environment, and gentle approach help make your dental visits as pleasant as possible."
     }
   ];
 
@@ -33,25 +29,33 @@ const About = () => {
           <span className='text-primary'>About</span> Us
         </Typography>
         
-        <Typography variant="body1" className="text-center mb-12 max-w-3xl mx-auto">
-          DentalCare Clinic has been providing exceptional dental care services for over 15 years. 
-          Our mission is to deliver the highest quality dental care in a comfortable and welcoming environment.
+        <Typography variant="body1" className="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+          At DentCare, we're more than just a dental clinic – we're your partners in achieving optimal oral health. 
+          Our modern facility combines state-of-the-art technology with compassionate care to provide an exceptional 
+          dental experience. With over two decades of service, we continue to prioritize patient comfort, 
+          quality care, and lasting results.
         </Typography>
 
         <Grid container spacing={4}>
           {features.map((feature, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
-              <Paper className="p-6 text-center h-full hover:shadow-lg transition-shadow">
-                <div className="mb-4">
-                  {feature.icon}
-                </div>
-                <Typography variant="h6" className="mb-2">
-                  {feature.title}
-                </Typography>
-                <Typography variant="body2" color="textSecondary">
-                  {feature.description}
-                </Typography>
-              </Paper>
+            <Grid item xs={12} sm={6} key={index}>
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+              >
+                <Card className="h-full shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <CardContent className="p-6">
+                    <Typography variant="h5" className="mb-3 font-semibold text-primary">
+                      {feature.title}
+                    </Typography>
+                    <Typography variant="body1" className="text-gray-600">
+                      {feature.description}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </motion.div>
             </Grid>
           ))}
         </Grid>
