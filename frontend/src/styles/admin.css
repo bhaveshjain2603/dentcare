@@ -1,0 +1,24 @@
+/* Admin table styles */
+@media screen and (max-width: 785px) {
+  .admin-table-container {
+    overflow-x: auto !important;
+  }
+
+  .admin-table-container::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  .admin-table-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+
+  .admin-table-container::-webkit-scrollbar-thumb {
+    background: #3b82f6;
+    border-radius: 4px;
+  }
+
+  .admin-table-container::-webkit-scrollbar-thumb:hover {
+    background: #2563eb;
+  }
+}
