@@ -154,7 +154,7 @@ const FAQ = () => {
                   expandIcon={<ExpandMoreIcon />}
                   className="hover:bg-gray-50"
                 >
-                  <Typography variant="h6" className="font-medium text-lg md:text-xl text-gray-700">
+                  <Typography variant="h6" className="font-medium text-lg md:text-md text-gray-500">
                     {faq.question}
                   </Typography>
                 </AccordionSummary>
