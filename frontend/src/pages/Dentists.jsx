@@ -88,7 +88,43 @@ const Dentists = () => {
       education: "DMD, Boston University",
       image: team4,
       bio: "Dr. Wilson is a highly skilled oral surgeon with expertise in complex dental procedures.",
-    }
+    },
+    {
+      name: "Dr. Olivia Martinez",
+      role: "Periodontist",
+      specialty: "Gum Disease Treatment",
+      experience: "14+ years",
+      education: "DDS, Columbia University College of Dental Medicine",
+      image: team1,
+      bio: "Dr. Martinez is an expert in treating gum disease and restoring the health of gums with advanced techniques.",
+    },
+    {
+      name: "Dr. David Thompson",
+      role: "Prosthodontist",
+      specialty: "Restorative Dentistry",
+      experience: "20+ years",
+      education: "DDS, University of Michigan School of Dentistry",
+      image: team2,
+      bio: "Dr. Thompson specializes in restorative dentistry, helping patients regain function and confidence with dental implants and prosthetics.",
+    },
+    {
+      name: "Dr. Sophia Patel",
+      role: "Endodontist",
+      specialty: "Root Canal Therapy",
+      experience: "11+ years",
+      education: "DDS, NYU College of Dentistry",
+      image: team3,
+      bio: "Dr. Patel is known for her precision and expertise in performing painless root canal treatments.",
+    },
+    {
+      name: "Dr. Robert Green",
+      role: "Dental Hygienist",
+      specialty: "Preventative Care",
+      experience: "8+ years",
+      education: "RDH, University of Southern California",
+      image: team4,
+      bio: "Dr. Green is passionate about preventative care and helping patients maintain healthy, beautiful smiles.",
+    },
   ];
 
   return (
