@@ -112,7 +112,7 @@ const About = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <img 
-              src="/src/img/carousel-2.jpg" 
+              src="/img/carousel-2.jpg" 
               alt="Modern Dental Clinic" 
               className="w-full h-auto rounded-lg shadow-xl"
             />
