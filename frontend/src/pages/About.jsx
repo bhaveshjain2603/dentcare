@@ -11,6 +11,7 @@ import {
   LocalHospital,
   People
 } from '@mui/icons-material';
+import carousel2 from '../img/carousel-2.jpg';
 
 const About = () => {
   const stats = [
@@ -112,7 +113,7 @@ const About = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <img 
-              src="/images/carousel-2.jpg" 
+              src={carousel2} 
               alt="Modern Dental Clinic" 
               className="w-full h-auto rounded-lg shadow-xl"
             />
